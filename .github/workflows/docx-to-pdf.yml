@@ -1,0 +1,32 @@
+name: Convert Docx to PDF
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore: [ '**.pdf' ]
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install libreoffice
+        run: sudo apt install -y --no-install-recommends libreoffice
+
+      - name: Convert docx files to pdf
+        run: |
+          mkdir -p pdf
+          for i in $(ls templates/*.docx); do libreoffice --headless --convert-to pdf:writer_pdf_Export "$i" --outdir ./pdf; done
+          
+      # Commits pdfs back to the same branch (commit || echo to not fail on no changes)
+      - name: Commit pdfs back to repo
+        run: |
+          cp /tmp/seccomp.json .
+          git config --global user.name "github-runner[bot]"
+          git config --global user.email "github-runner[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "auto-generated pdfs from docx templates" || echo
+          git push origin ${GITHUB_REF##*/} -f
