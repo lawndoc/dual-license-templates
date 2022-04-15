@@ -12,34 +12,36 @@ This is where the dual-license model comes in. Rather than only choosing a copyl
 
 ## What license templates are in this repo?
 
-There are various commercial license templates in this repo that you can use for free. These are the ones that you would sell to a company and modify to fit your specific needs. If you use one of these templates, make sure you understand __all__ of your responsibilities in the agreement. Below are short descriptions of the license templates and what each one covers:
+There are various commercial license templates in this repo that you can use for free. These are the ones that you would sell to a company and modify to fit your specific needs. If you use one of these templates, make sure you understand __all__ of your responsibilities in the agreement. Below are short descriptions of the license templates and what each one covers.
 
-### [Basic-Yearly](pdf/Basic-Yearly.pdf)
+Click on the name of the template to see a full PDF rendering of it, or click on the "📄" icon to download the template as a .docx file.
+
+### [📄](https://github.com/lawndoc/dual-license-templates/raw/main/templates/Basic-Yearly.docx) [Basic-Yearly](pdf/Basic-Yearly.pdf)
 
 _Term_: 1 Year (licensee must renew annually)
 
 _Support_: No support (separate agreement)
 
-_Permitted Use_: The below actions are permitted
+_Permissions_:
   - modification of original source code
   - use as a component in a new software or service
 
-_Restrictions_: The below actions are prohibited
+_Restrictions_:
   - sell, license, or sublicense the original software or documentation
   - share modifications with others
   - modify in a way that competes with the original software for customers
 
-### [Basic-Perpetual](pdf/Basic-Perpetual.pdf)
+### [📄](https://github.com/lawndoc/dual-license-templates/raw/main/templates/Basic-Perpetual.docx) [Basic-Perpetual](pdf/Basic-Perpetual.pdf)
 
 _Term_: Perpetual (license does not expire)
 
 _Support_: No support (separate agreement)
 
-_Permitted Use_: The below actions are permitted
+_Permissions_:
   - modification of original source code
   - use as a component in a new software or service
 
-_Restrictions_: The below actions are prohibited
+_Restrictions_:
   - sell, license, or sublicense the original software or documentation
   - share modifications with others
   - modify in a way that competes with the original software for customers
