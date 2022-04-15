@@ -2,6 +2,8 @@
 
 Various commercial license templates for open source projects that want to use the sustainable dual-license model.
 
+![dual license](dual-license.webp)
+
 ## How does the dual license model work?
 
 With dual licensing, developers can distribute software using both an open source license and a commercial license. This allows the developer to have the advantages of both types of licenses.
